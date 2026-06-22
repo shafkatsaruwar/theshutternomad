@@ -9,27 +9,15 @@ export default function Home() {
   const featuredWorks = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80",
-      title: "Highland Light",
-      category: "Landscape"
+      image: "https://media.base44.com/images/public/6a398250071013524ae383a2/829448f7f_IMG_3782.jpg",
+      title: "The Keeper's Light",
+      category: "Architecture"
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
-      title: "The Wanderer",
-      category: "Portrait"
-    },
-    {
-      id: 3,
-      image: "https://images.unsplash.com/photo-1480714378408-67cf0d3bc1b?w=800&q=80",
-      title: "City Pulse",
-      category: "Street"
-    },
-    {
-      id: 4,
-      image: "https://images.unsplash.com/photo-1488646959791-4331f9d1b9b1?w=800&q=80",
-      title: "Distant Shores",
-      category: "Travel"
+      image: "https://media.base44.com/images/public/6a398250071013524ae383a2/287e4f486_NewHavenConnecticut__MG_0272.jpg",
+      title: "Weeping Cherry",
+      category: "Nature"
     }
   ];
 
