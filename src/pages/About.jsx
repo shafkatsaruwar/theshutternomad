@@ -146,21 +146,12 @@ export default function About() {
 
       {/* Gear Section */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-24">
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid gap-8">
           <FadeIn direction="left">
-            <div className="aspect-[4/3] overflow-hidden">
+            <div className="aspect-[16/9] overflow-hidden">
               <img
                 src="https://media.base44.com/images/public/6a398250071013524ae383a2/9901e96e0_IMG_0149_1.jpg"
                 alt="The gear"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </FadeIn>
-          <FadeIn direction="right" delay={0.1}>
-            <div className="aspect-[4/3] overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?w=800&q=80"
-                alt="On the road"
                 className="w-full h-full object-cover"
               />
             </div>
