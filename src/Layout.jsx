@@ -80,22 +80,24 @@ export default function Layout({ children, currentPageName }) {
             <div>
               <h4 className="text-xs tracking-widest uppercase mb-4 text-white/40">Connect</h4>
               <a
-                href="#"
+                href="https://instagram.com/the.shutternomad"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 text-sm hover:text-[#B08D57] transition-colors"
               >
                 <Instagram className="w-4 h-4" />
-                @theshutternomad
+                @the.shutternomad
               </a>
               <a
-                href="#"
+                href="mailto:theshutternomad@outlook.com"
                 className="flex items-center gap-2 text-sm hover:text-[#B08D57] transition-colors mt-4"
               >
                 <Mail className="w-4 h-4" />
-                hello@shutternomad.com
+                theshutternomad@outlook.com
               </a>
               <p className="flex items-center gap-2 text-sm mt-4 text-white/60">
                 <MapPin className="w-4 h-4" />
-                Currently: Reykjavík, Iceland
+                Currently: Boston, MA, USA
               </p>
             </div>
           </div>
