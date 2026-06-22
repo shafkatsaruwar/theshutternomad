@@ -137,54 +137,56 @@ export default function Gallery() {
         </FadeIn>
       </div>
 
-      {/* Masonry Gallery */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <motion.div 
-          layout
-          className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6"
-        >
-          <AnimatePresence mode="popLayout">
-            {filteredImages.map((image, index) => (
-              <motion.div
-                key={image.id}
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="break-inside-avoid"
-              >
-                <div
-                  onClick={() => setSelectedImage(image)}
-                  className={`group cursor-pointer overflow-hidden bg-[#e8e5df] ${
-                    image.size === "large" 
-                      ? "aspect-[3/4]" 
-                      : image.size === "medium"
-                      ? "aspect-square"
-                      : "aspect-[4/3]"
+      {/* Cinematic Full-Bleed Gallery */}
+      <div className="w-full">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeFilter}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            {filteredImages.map((image, index) => {
+              const isWide = index % 3 === 0;
+              return (
+                <motion.div
+                  key={image.id}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-80px" }}
+                  transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+                  className={`group cursor-pointer relative overflow-hidden bg-[#1a1a1a] ${
+                    isWide
+                      ? "w-full aspect-[16/10] md:aspect-[21/9]"
+                      : "w-full aspect-[4/3] md:aspect-[16/9]"
                   }`}
+                  onClick={() => setSelectedImage(image)}
                 >
-                  <div className="relative w-full h-full">
-                    <img
-                      src={image.src}
-                      alt={image.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-[#1a1a1a]/0 group-hover:bg-[#1a1a1a]/40 transition-colors duration-500" />
-                    <div className="absolute inset-0 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <p className="text-white/70 text-xs tracking-widest uppercase mb-1">
+                  <img
+                    src={image.src}
+                    alt={image.title}
+                    className="w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-[1.04]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/70 via-transparent to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
+                  <div className="absolute bottom-0 left-0 right-0 p-8 md:p-14 lg:p-20 flex items-end justify-between">
+                    <div>
+                      <p className="text-white/60 text-xs tracking-[0.3em] uppercase mb-2">
                         {image.category}
                       </p>
-                      <h3 className="font-serif text-xl text-white">
+                      <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white">
                         {image.title}
                       </h3>
                     </div>
+                    <span className="hidden md:block text-white/40 text-sm tracking-widest">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
                   </div>
-                </div>
-              </motion.div>
-            ))}
-          </AnimatePresence>
-        </motion.div>
+                </motion.div>
+              );
+            })}
+          </motion.div>
+        </AnimatePresence>
       </div>
 
       {/* Lightbox */}
