@@ -44,21 +44,22 @@ export default function About() {
                 The Photographer
               </p>
               <h1 className="font-serif text-5xl md:text-6xl text-[#1a1a1a] mb-6">
-                The Shutter Nomad
+                Mohammed
               </h1>
               <div className="space-y-6 text-[#3D2B1F]/70 leading-relaxed">
                 <p>
-                  I'm a travel and documentary photographer who gave up a 
-                  desk job to chase horizons. What started as a borrowed 
-                  camera and a one-way ticket has become a life spent 
-                  collecting light from the world's quietest corners.
+                  I'm Mohammed. I have a full-time life, but my real 
+                  joy is traveling and taking photos. What started as 
+                  a camera in hand on weekend trips has grown into a 
+                  quiet obsession with collecting light from the 
+                  world's most beautiful corners.
                 </p>
                 <p>
-                  My work has taken me from the black-sand beaches of 
-                  Iceland to the lantern-lit streets of Hoi An, from 
-                  mountain villages in Patagonia to the rooftops of 
-                  Marrakech. I've shot for travel brands, magazines, 
-                  and couples who wanted their love story told honestly.
+                  I'm not a professional photographer — I just love 
+                  the craft. I love the way light falls differently 
+                  in every place, the way a single frame can hold the 
+                  feeling of a whole journey. This is where I share 
+                  the images that stayed with me.
                 </p>
                 <p>
                   "I believe a photograph should make you feel something — 
@@ -78,8 +79,8 @@ export default function About() {
                     <p className="text-[#B08D57] text-sm mt-1">Countries Visited</p>
                   </div>
                   <div>
-                    <p className="font-serif text-3xl text-[#1a1a1a]">300+</p>
-                    <p className="text-[#B08D57] text-sm mt-1">Sessions Captured</p>
+                    <p className="font-serif text-3xl text-[#1a1a1a]">∞</p>
+                    <p className="text-[#B08D57] text-sm mt-1">Moments Kept</p>
                   </div>
                 </div>
               </div>
@@ -103,7 +104,7 @@ export default function About() {
             <p className="text-white/60 max-w-2xl mx-auto leading-relaxed">
               The best images aren't planned — they're noticed. A shift in 
               light, a glance between strangers, the way dust hangs in a 
-              doorway. My job is to be present enough to catch them.
+              doorway. I just try to be present enough to catch them.
             </p>
           </FadeIn>
         </div>
