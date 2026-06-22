@@ -93,6 +93,83 @@ export default function Gallery() {
       category: "Nature",
       title: "First Bloom",
       size: "small"
+    },
+    {
+      id: 13,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/2bbd7c56c_IMG_3782.jpg",
+      category: "Architecture",
+      title: "Portland Head",
+      size: "large"
+    },
+    {
+      id: 14,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/e202c0133_IMG_3882.jpg",
+      category: "Nature",
+      title: "Atlantic Calm",
+      size: "large"
+    },
+    {
+      id: 15,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/41668645e_IMG_4032.jpg",
+      category: "Architecture",
+      title: "Headland",
+      size: "large"
+    },
+    {
+      id: 16,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/5320a059d_IMG_4182.jpg",
+      category: "Nature",
+      title: "Sea Foam",
+      size: "medium"
+    },
+    {
+      id: 17,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/46d5e647e_NewHavenConnecticut__MG_0143.jpg",
+      category: "Architecture",
+      title: "New Haven Duo",
+      size: "large"
+    },
+    {
+      id: 18,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/caa62965f_NewHavenConnecticut__MG_0156.jpg",
+      category: "Still Life",
+      title: "Arranged Bloom",
+      size: "medium"
+    },
+    {
+      id: 19,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/287e4f486_NewHavenConnecticut__MG_0272.jpg",
+      category: "Nature",
+      title: "Weeping Cherry",
+      size: "medium"
+    },
+    {
+      id: 20,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/8cad393c3_NewHavenConnecticut__MG_0273.jpg",
+      category: "Nature",
+      title: "Petal Drift",
+      size: "small"
+    },
+    {
+      id: 21,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/688a445ff_NewHavenConnecticut__MG_0279.jpg",
+      category: "Nature",
+      title: "Hanging Blossom",
+      size: "small"
+    },
+    {
+      id: 22,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/39cb93ca0_NewHavenConnecticut__MG_0301.jpg",
+      category: "Nature",
+      title: "Crimson Bloom",
+      size: "small"
+    },
+    {
+      id: 23,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/4e84bc77d_NewHavenConnecticut__MG_0316.jpg",
+      category: "Nature",
+      title: "Pale Cluster",
+      size: "small"
     }
   ];
 
