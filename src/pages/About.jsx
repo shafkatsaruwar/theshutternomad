@@ -71,12 +71,12 @@ export default function About() {
               <div className="mt-10 pt-10 border-t border-[#e8e5df]">
                 <div className="grid grid-cols-3 gap-8">
                   <div>
-                    <p className="font-serif text-3xl text-[#1a1a1a]">12+</p>
-                    <p className="text-[#B08D57] text-sm mt-1">Years Shooting</p>
+                    <p className="font-serif text-3xl text-[#1a1a1a]">1</p>
+                    <p className="text-[#B08D57] text-sm mt-1">Year Shooting</p>
                   </div>
                   <div>
-                    <p className="font-serif text-3xl text-[#1a1a1a]">40+</p>
-                    <p className="text-[#B08D57] text-sm mt-1">Countries Visited</p>
+                    <p className="font-serif text-3xl text-[#1a1a1a]">7+</p>
+                    <p className="text-[#B08D57] text-sm mt-1">States Visited</p>
                   </div>
                   <div>
                     <p className="font-serif text-3xl text-[#1a1a1a]">∞</p>
