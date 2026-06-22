@@ -31,7 +31,7 @@ export default function About() {
           <FadeIn direction="left">
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1542038784456-1ea8479b6d5c?w=800&q=80"
+                src="https://media.base44.com/images/public/6a398250071013524ae383a2/2728928e0_1500D7A9-F52A-46D1-98B7-B7337C4B5F46_4_5005_c.jpg"
                 alt="The Shutter Nomad"
                 className="w-full h-full object-cover"
               />
