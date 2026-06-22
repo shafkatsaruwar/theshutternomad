@@ -150,7 +150,7 @@ export default function About() {
           <FadeIn direction="left">
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1502920917128-9530e40e5c5a?w=800&q=80"
+                src="https://media.base44.com/images/public/6a398250071013524ae383a2/9901e96e0_IMG_0149_1.jpg"
                 alt="The gear"
                 className="w-full h-full object-cover"
               />
@@ -173,10 +173,11 @@ export default function About() {
               The Kit
             </h3>
             <p className="text-[#3D2B1F]/70 max-w-2xl mx-auto leading-relaxed">
-              I travel light — a mirrorless body, a couple of prime lenses, 
-              and a sturdy tripod. The rest is patience, timing, and a 
-              willingness to wake up before the sun. Less gear means more 
-              presence, and presence is what makes a photograph breathe.
+              I shoot on a Canon EOS RP with a couple of prime lenses — 
+              an 85mm for portraits and a wider one for the landscapes. 
+              The rest is patience, timing, and a willingness to wake up 
+              before the sun. Less gear means more presence, and presence 
+              is what makes a photograph breathe.
             </p>
           </div>
         </FadeIn>
