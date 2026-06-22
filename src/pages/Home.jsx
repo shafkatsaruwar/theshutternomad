@@ -41,7 +41,7 @@ export default function Home() {
           <div 
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1500964757637-c85e8a162699?w=1920&q=80')"
+              backgroundImage: "url('https://media.base44.com/images/public/6a398250071013524ae383a2/81207789b_IMG_0149_1.jpg')"
             }}
           />
           <div className="absolute inset-0 bg-[#1a1a1a]/50" />
