@@ -7,92 +7,92 @@ export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const categories = ["All", "Landscape", "Portrait", "Street", "Travel", "Architecture"];
+  const categories = ["All", "Architecture", "Nature", "Portrait", "Still Life", "Street"];
 
   const galleryImages = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80",
-      category: "Landscape",
-      title: "Highland Light",
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/1c313548b_IMG_0852.jpg",
+      category: "Architecture",
+      title: "Glass & Sky",
       size: "large"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/04166296c_4A834112-AA0F-461D-AA23-26C6EF55DAAF_L0_001-7_27_20253_05_27PM.jpg",
       category: "Portrait",
-      title: "The Wanderer",
-      size: "small"
+      title: "Quiet Light",
+      size: "large"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1480714378408-67cf0d3bc1b?w=800&q=80",
-      category: "Street",
-      title: "City Pulse",
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/bbf81d8a5__MG_0313-2.jpg",
+      category: "Nature",
+      title: "Cherry Blossom",
       size: "small"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1488646959791-4331f9d1b9b1?w=800&q=80",
-      category: "Travel",
-      title: "Distant Shores",
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/91362395f_5CF54954-0AC4-4C4B-AAE2-5672B92A32FB_L0_001-7_27_20254_45_49PM.jpg",
+      category: "Still Life",
+      title: "The Satchel",
       size: "medium"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1444723121867-7b8cd1b0a3c0?w=800&q=80",
-      category: "Architecture",
-      title: "Concrete Symphony",
-      size: "small"
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/71ddfe5a2_C94CE655-24EA-4BD9-83B8-E4060707B2AA_L0_001-4_28_20258_57_27PM.jpg",
+      category: "Nature",
+      title: "Quince Bloom",
+      size: "medium"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
-      category: "Landscape",
-      title: "Forest Cathedral",
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/d1ed17e82_ChapterOpenedWandReadyLettheMagicUnfold.jpg",
+      category: "Still Life",
+      title: "Chapter Opened",
       size: "large"
     },
     {
       id: 7,
-      src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
-      category: "Portrait",
-      title: "Quiet Confidence",
-      size: "medium"
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/27b29bd74__MG_0321-2.jpg",
+      category: "Nature",
+      title: "Magnolia",
+      size: "small"
     },
     {
       id: 8,
-      src: "https://images.unsplash.com/photo-1530521953877-e0bd5c3c9b5b?w=800&q=80",
-      category: "Travel",
-      title: "Wandering Souls",
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/8837587ce__MG_0301-2.jpg",
+      category: "Nature",
+      title: "Crimson Branch",
       size: "small"
     },
     {
       id: 9,
-      src: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
-      category: "Landscape",
-      title: "Morning Mist",
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/5906171d9_039551D5-2D90-4FA7-8631-83D4C14F3096_L0_001-7_27_20254_45_49PM.jpg",
+      category: "Still Life",
+      title: "Reflection",
       size: "small"
     },
     {
       id: 10,
-      src: "https://images.unsplash.com/photo-1502920917128-9530e40e5c5a?w=800&q=80",
-      category: "Travel",
-      title: "The Gear",
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/eeb68f1da__MG_0321-3.jpg",
+      category: "Nature",
+      title: "Petals",
       size: "medium"
     },
     {
       id: 11,
-      src: "https://images.unsplash.com/photo-1554188248-986adbb73be4?w=800&q=80",
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/f2ea35e3d_DE73AA4E-9C65-4138-BC4C-BA43C6CE1265_1_105_c.jpg",
       category: "Street",
-      title: "Rain & Neon",
+      title: "Harbor Story",
       size: "small"
     },
     {
       id: 12,
-      src: "https://images.unsplash.com/photo-1486325212946-7d0abcfd9b22?w=800&q=80",
-      category: "Travel",
-      title: "Coastal Drift",
-      size: "large"
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/dea8cc827_35E1E874-002B-4D79-9A31-4B7BB98D7CE4_1_105_c.jpg",
+      category: "Nature",
+      title: "First Bloom",
+      size: "small"
     }
   ];
 
