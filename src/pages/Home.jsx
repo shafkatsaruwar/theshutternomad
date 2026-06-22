@@ -170,7 +170,7 @@ export default function Home() {
             <FadeIn direction="left">
               <div className="aspect-[3/4] overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1542038784456-1ea8479b6d5c?w=800&q=80"
+                  src="https://media.base44.com/images/public/6a398250071013524ae383a2/51ace835a_IMG_4526.jpg"
                   alt="The photographer"
                   className="w-full h-full object-cover"
                 />
