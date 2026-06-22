@@ -22,7 +22,6 @@ export default function Booking() {
   const services = [
     "Portrait Sessions",
     "Wedding Photography",
-    "Editorial & Commercial",
     "Travel & Adventure",
     "Event Coverage",
     "Fine Art Prints"

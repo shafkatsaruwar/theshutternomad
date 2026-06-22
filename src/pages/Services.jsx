@@ -21,13 +21,6 @@ export default function Services() {
       popular: true
     },
     {
-      name: "Editorial & Commercial",
-      description: "Magazine spreads, lookbooks, product launches, and brand campaigns. Collaborative, concept-driven shoots.",
-      duration: "Half day",
-      price: "$1,200",
-      popular: false
-    },
-    {
       name: "Travel & Adventure",
       description: "Expedition and outdoor photography for brands, tourism boards, and publications. I go where the story is.",
       duration: "Custom",
