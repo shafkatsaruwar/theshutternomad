@@ -181,24 +181,6 @@ export default function About() {
         </FadeIn>
       </div>
 
-      {/* Press */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-24">
-        <FadeIn>
-          <div className="border-y border-[#e8e5df] py-12">
-            <p className="text-center text-[#B08D57] text-sm tracking-[0.3em] uppercase mb-8">
-              As Featured In
-            </p>
-            <div className="flex flex-wrap justify-center items-center gap-12 text-[#1a1a1a]/30">
-              <span className="font-serif text-2xl">NATIONAL GEOGRAPHIC</span>
-              <span className="font-serif text-2xl">CONDÉ NAST TRAVELER</span>
-              <span className="font-serif text-2xl">LONELY PLANET</span>
-              <span className="font-serif text-2xl">OUTSIDE</span>
-              <span className="font-serif text-2xl">APERTURE</span>
-            </div>
-          </div>
-        </FadeIn>
-      </div>
-
       {/* CTA */}
       <div className="max-w-3xl mx-auto px-6 lg:px-12 text-center">
         <FadeIn>
