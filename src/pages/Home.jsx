@@ -186,13 +186,13 @@ export default function Home() {
                   The Traveler's Eye
                 </h2>
                 <p className="text-[#3D2B1F]/70 leading-relaxed mb-8">
-                  For over a decade, I've wandered from the volcanic shores of Iceland 
-                  to the neon-lit alleys of Tokyo, camera in hand and curiosity as my compass. 
-                  Every photograph is a postcard from a moment I never wanted to forget.
+                  Based in Boston, I roam the back roads of New England with a Canon EOS RP 
+                  and a habit of pulling over for good light. From lighthouses on the Cape to 
+                  the quiet hills of Vermont, each frame is a small souvenir from a place that made me stop.
                 </p>
                 <p className="text-[#3D2B1F]/70 leading-relaxed mb-10">
-                  My work lives at the intersection of wanderlust and craft — 
-                  a visual diary of the people, places, and light that move me.
+                  I'm not a professional — just a traveler who can't help but photograph 
+                  what he sees. This is my visual diary of the East Coast and wherever the road leads next.
                 </p>
                 <Link
                   to={createPageUrl("About")}
