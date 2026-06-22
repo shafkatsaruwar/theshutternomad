@@ -7,54 +7,54 @@ import FadeIn from "@/components/ui/FadeIn";
 export default function Services() {
   const services = [
     {
-      name: "Signature Manicure",
-      description: "Our foundational experience featuring meticulous nail shaping, cuticle care, and a flawless polish application.",
-      duration: "60 min",
-      price: "$85",
-      popular: false
-    },
-    {
-      name: "Luxury Gel Extension",
-      description: "Expertly sculpted extensions using premium gel systems, customized to your desired length and shape.",
+      name: "Portrait Sessions",
+      description: "Personal, brand, or editorial portraits shot on location or in-studio. Natural light, authentic moments.",
       duration: "90 min",
-      price: "$150",
-      popular: true
-    },
-    {
-      name: "Bespoke Nail Art",
-      description: "Intricate hand-painted designs, 3D embellishments, and custom artwork tailored to your vision.",
-      duration: "120 min",
-      price: "$200+",
-      popular: true
-    },
-    {
-      name: "Bridal Collection",
-      description: "A comprehensive bridal package including consultation, trial design, and wedding-day service.",
-      duration: "180 min",
       price: "$350",
+      popular: true
+    },
+    {
+      name: "Wedding Photography",
+      description: "Full-day coverage of your celebration — from the quiet morning prep to the last dance. Two photographers included.",
+      duration: "8 hours",
+      price: "$2,800",
+      popular: true
+    },
+    {
+      name: "Editorial & Commercial",
+      description: "Magazine spreads, lookbooks, product launches, and brand campaigns. Collaborative, concept-driven shoots.",
+      duration: "Half day",
+      price: "$1,200",
       popular: false
     },
     {
-      name: "Chrome & Specialty",
-      description: "Statement-making chrome, holographic, and specialty finish applications.",
-      duration: "75 min",
-      price: "$120",
+      name: "Travel & Adventure",
+      description: "Expedition and outdoor photography for brands, tourism boards, and publications. I go where the story is.",
+      duration: "Custom",
+      price: "From $1,500",
       popular: false
     },
     {
-      name: "Maintenance & Refill",
-      description: "Keep your extensions looking pristine with our professional maintenance service.",
-      duration: "60 min",
-      price: "$75",
+      name: "Event Coverage",
+      description: "Galleries, launches, conferences, and private events. Candid, documentary-style storytelling.",
+      duration: "4 hours",
+      price: "$900",
+      popular: false
+    },
+    {
+      name: "Fine Art Prints",
+      description: "Limited-edition archival prints from my travel portfolio. Hand-signed, museum-quality, made to order.",
+      duration: "Made to order",
+      price: "From $180",
       popular: false
     }
   ];
 
   const addOns = [
-    { name: "Hand Massage", price: "$20" },
-    { name: "Paraffin Treatment", price: "$25" },
-    { name: "Nail Repair (per nail)", price: "$15" },
-    { name: "Design Consultation", price: "Complimentary" }
+    { name: "Additional Hour of Coverage", price: "$250" },
+    { name: "Second Photographer", price: "$400" },
+    { name: "Rush Edit (48-hour delivery)", price: "$300" },
+    { name: "Online Gallery & Sharing", price: "Complimentary" }
   ];
 
   return (
@@ -63,19 +63,19 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-20">
         <div className="grid lg:grid-cols-2 gap-16 items-end">
           <FadeIn>
-            <p className="text-[#9C8B7A] text-sm tracking-[0.3em] uppercase mb-4">
+            <p className="text-[#B08D57] text-sm tracking-[0.3em] uppercase mb-4">
               The Services
             </p>
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-[#1a1a1a] mb-6">
-              Curated<br />Experiences
+              Capture<br />Your Story
             </h1>
           </FadeIn>
           
           <FadeIn delay={0.2}>
             <p className="text-[#3D2B1F]/70 leading-relaxed lg:pb-2">
-              Each service at Aurelia is designed to be a moment of indulgence. 
-              We believe in quality over quantity, taking the time to ensure 
-              every detail is perfect.
+              From intimate portraits to full-day weddings, every session is 
+              approached with the same care — an eye for light, a feel for 
+              the moment, and a commitment to images that last.
             </p>
           </FadeIn>
         </div>
@@ -86,10 +86,10 @@ export default function Services() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <FadeIn key={service.name} delay={index * 0.1}>
-              <div className="group relative bg-white p-8 lg:p-10 h-full flex flex-col border border-[#e8e5df] hover:border-[#9C8B7A]/30 transition-colors duration-500">
+              <div className="group relative bg-white p-8 lg:p-10 h-full flex flex-col border border-[#e8e5df] hover:border-[#B08D57]/30 transition-colors duration-500">
                 {service.popular && (
                   <div className="absolute top-6 right-6">
-                    <Sparkles className="w-4 h-4 text-[#D4A5A5]" />
+                    <Sparkles className="w-4 h-4 text-[#B08D57]" />
                   </div>
                 )}
                 
@@ -103,7 +103,7 @@ export default function Services() {
                 </div>
 
                 <div className="border-t border-[#e8e5df] pt-6 flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-[#9C8B7A]">
+                  <div className="flex items-center gap-2 text-[#B08D57]">
                     <Clock className="w-4 h-4" />
                     <span className="text-sm">{service.duration}</span>
                   </div>
@@ -123,15 +123,15 @@ export default function Services() {
           <FadeIn>
             <div className="grid lg:grid-cols-2 gap-12">
               <div>
-                <p className="text-[#D4A5A5] text-sm tracking-[0.3em] uppercase mb-4">
+                <p className="text-[#B08D57] text-sm tracking-[0.3em] uppercase mb-4">
                   Enhancements
                 </p>
                 <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">
                   Add-On Services
                 </h2>
                 <p className="text-white/60 leading-relaxed">
-                  Elevate your experience with our curated selection of 
-                  enhancement services.
+                  Tailor your package with these optional enhancements. 
+                  Everything is flexible — tell me what you need.
                 </p>
               </div>
 
@@ -142,7 +142,7 @@ export default function Services() {
                     className="flex items-center justify-between py-4 border-b border-white/10"
                   >
                     <span className="text-white">{addon.name}</span>
-                    <span className="text-[#D4A5A5] font-serif text-lg">
+                    <span className="text-[#B08D57] font-serif text-lg">
                       {addon.price}
                     </span>
                   </div>
@@ -162,8 +162,8 @@ export default function Services() {
                 Booking Policy
               </h4>
               <p className="text-[#3D2B1F]/60 text-sm leading-relaxed">
-                A 50% deposit is required to secure your appointment. 
-                Deposits are non-refundable within 48 hours of service.
+                A 30% retainer secures your date. The balance is due on the 
+                day of the shoot. Travel fees may apply for remote locations.
               </p>
             </div>
             <div className="p-6">
@@ -171,17 +171,17 @@ export default function Services() {
                 Cancellations
               </h4>
               <p className="text-[#3D2B1F]/60 text-sm leading-relaxed">
-                Please provide 48 hours notice for cancellations or 
-                rescheduling to avoid forfeiting your deposit.
+                Please give 72 hours notice for rescheduling. Retainers are 
+                non-refundable within 14 days of the shoot date.
               </p>
             </div>
             <div className="p-6">
               <h4 className="font-serif text-xl text-[#1a1a1a] mb-3">
-                Arrival
+                Delivery
               </h4>
               <p className="text-[#3D2B1F]/60 text-sm leading-relaxed">
-                Please arrive 5-10 minutes early to ensure your full 
-                service time. Late arrivals may result in shortened services.
+                Edited galleries are delivered within 2–3 weeks via a private 
+                online gallery, ready for download and print ordering.
               </p>
             </div>
           </div>
@@ -195,13 +195,13 @@ export default function Services() {
             Ready to Book?
           </h2>
           <p className="text-[#3D2B1F]/70 mb-10 max-w-md mx-auto">
-            Secure your appointment and begin your journey to exquisite nails.
+            Tell me about your project and let's create something worth keeping.
           </p>
           <Link
             to={createPageUrl("Booking")}
             className="inline-flex items-center gap-3 bg-[#1a1a1a] text-white px-10 py-5 text-sm tracking-widest uppercase hover:bg-[#3D2B1F] transition-colors"
           >
-            Book Your Session
+            Book a Session
             <ArrowRight className="w-4 h-4" />
           </Link>
         </FadeIn>

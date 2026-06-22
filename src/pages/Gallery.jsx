@@ -7,91 +7,91 @@ export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const categories = ["All", "Editorial", "Bridal", "Avant-Garde", "Classic", "Seasonal"];
+  const categories = ["All", "Landscape", "Portrait", "Street", "Travel", "Architecture"];
 
   const galleryImages = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80",
-      category: "Editorial",
-      title: "Pearl Essence",
+      src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80",
+      category: "Landscape",
+      title: "Highland Light",
       size: "large"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&q=80",
-      category: "Bridal",
-      title: "Midnight Garden",
+      src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+      category: "Portrait",
+      title: "The Wanderer",
       size: "small"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=800&q=80",
-      category: "Avant-Garde",
-      title: "Chrome Dreams",
+      src: "https://images.unsplash.com/photo-1480714378408-67cf0d3bc1b?w=800&q=80",
+      category: "Street",
+      title: "City Pulse",
       size: "small"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800&q=80",
-      category: "Classic",
-      title: "Blush Hour",
+      src: "https://images.unsplash.com/photo-1488646959791-4331f9d1b9b1?w=800&q=80",
+      category: "Travel",
+      title: "Distant Shores",
       size: "medium"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80",
-      category: "Seasonal",
-      title: "Winter Frost",
+      src: "https://images.unsplash.com/photo-1444723121867-7b8cd1b0a3c0?w=800&q=80",
+      category: "Architecture",
+      title: "Concrete Symphony",
       size: "small"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&q=80",
-      category: "Editorial",
-      title: "Golden Hour",
+      src: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+      category: "Landscape",
+      title: "Forest Cathedral",
       size: "large"
     },
     {
       id: 7,
-      src: "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=800&q=80",
-      category: "Bridal",
-      title: "Ivory Dreams",
+      src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+      category: "Portrait",
+      title: "Quiet Confidence",
       size: "medium"
     },
     {
       id: 8,
-      src: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800&q=80",
-      category: "Avant-Garde",
-      title: "Obsidian",
+      src: "https://images.unsplash.com/photo-1530521953877-e0bd5c3c9b5b?w=800&q=80",
+      category: "Travel",
+      title: "Wandering Souls",
       size: "small"
     },
     {
       id: 9,
-      src: "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80",
-      category: "Classic",
-      title: "French Moderne",
+      src: "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
+      category: "Landscape",
+      title: "Morning Mist",
       size: "small"
     },
     {
       id: 10,
-      src: "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&q=80",
-      category: "Seasonal",
-      title: "Autumn Ember",
+      src: "https://images.unsplash.com/photo-1502920917128-9530e40e5c5a?w=800&q=80",
+      category: "Travel",
+      title: "The Gear",
       size: "medium"
     },
     {
       id: 11,
-      src: "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=800&q=80",
-      category: "Editorial",
-      title: "Velvet Night",
+      src: "https://images.unsplash.com/photo-1554188248-986adbb73be4?w=800&q=80",
+      category: "Street",
+      title: "Rain & Neon",
       size: "small"
     },
     {
       id: 12,
-      src: "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800&q=80",
-      category: "Bridal",
-      title: "Rose Petal",
+      src: "https://images.unsplash.com/photo-1486325212946-7d0abcfd9b22?w=800&q=80",
+      category: "Travel",
+      title: "Coastal Drift",
       size: "large"
     }
   ];
@@ -105,15 +105,15 @@ export default function Gallery() {
       {/* Header */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
         <FadeIn>
-          <p className="text-[#9C8B7A] text-sm tracking-[0.3em] uppercase mb-4">
+          <p className="text-[#B08D57] text-sm tracking-[0.3em] uppercase mb-4">
             The Collection
           </p>
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-[#1a1a1a] mb-8">
             Gallery
           </h1>
           <p className="text-[#3D2B1F]/70 max-w-xl leading-relaxed">
-            A curated selection of our finest work. Each design tells a story of 
-            elegance, creativity, and meticulous craftsmanship.
+            A curated selection of photographs from journeys near and far. 
+            Each frame is a moment frozen — a story waiting to be felt.
           </p>
         </FadeIn>
 

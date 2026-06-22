@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "@/components/navigation/NavBar";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { Instagram } from "lucide-react";
+import { Instagram, Mail, MapPin } from "lucide-react";
 
 export default function Layout({ children, currentPageName }) {
   return (
@@ -14,7 +14,7 @@ export default function Layout({ children, currentPageName }) {
           --color-ivory: #F5F3EF;
           --color-charcoal: #1a1a1a;
           --color-stone: #9C8B7A;
-          --color-blush: #D4A5A5;
+          --color-amber: #B08D57;
           --color-espresso: #3D2B1F;
         }
         
@@ -29,8 +29,8 @@ export default function Layout({ children, currentPageName }) {
         }
         
         ::selection {
-          background-color: var(--color-blush);
-          color: var(--color-charcoal);
+          background-color: var(--color-amber);
+          color: var(--color-ivory);
         }
         
         /* Custom scrollbar */
@@ -55,10 +55,10 @@ export default function Layout({ children, currentPageName }) {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid md:grid-cols-3 gap-12 mb-12">
             <div>
-              <h3 className="font-serif text-3xl text-white mb-4">Aurelia</h3>
+              <h3 className="font-serif text-3xl text-white mb-4">The Shutter Nomad</h3>
               <p className="text-sm leading-relaxed text-white/60">
-                Luxury nail artistry for the discerning client. 
-                Each design is a bespoke creation.
+                Visual storytelling from the road. Chasing light, 
+                capturing moments, and sharing the journey one frame at a time.
               </p>
             </div>
             
@@ -69,7 +69,7 @@ export default function Layout({ children, currentPageName }) {
                   <Link
                     key={page}
                     to={createPageUrl(page)}
-                    className="text-sm hover:text-[#D4A5A5] transition-colors"
+                    className="text-sm hover:text-[#B08D57] transition-colors"
                   >
                     {page}
                   </Link>
@@ -81,23 +81,31 @@ export default function Layout({ children, currentPageName }) {
               <h4 className="text-xs tracking-widest uppercase mb-4 text-white/40">Connect</h4>
               <a
                 href="#"
-                className="inline-flex items-center gap-2 text-sm hover:text-[#D4A5A5] transition-colors"
+                className="inline-flex items-center gap-2 text-sm hover:text-[#B08D57] transition-colors"
               >
                 <Instagram className="w-4 h-4" />
-                @aurelia.nails
+                @theshutternomad
               </a>
-              <p className="text-sm mt-4 text-white/60">
-                Los Angeles, CA
+              <a
+                href="#"
+                className="flex items-center gap-2 text-sm hover:text-[#B08D57] transition-colors mt-4"
+              >
+                <Mail className="w-4 h-4" />
+                hello@shutternomad.com
+              </a>
+              <p className="flex items-center gap-2 text-sm mt-4 text-white/60">
+                <MapPin className="w-4 h-4" />
+                Currently: Reykjavík, Iceland
               </p>
             </div>
           </div>
           
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-white/40">
-              © 2024 Aurelia. All rights reserved.
+              © 2026 The Shutter Nomad. All photographs are protected by copyright.
             </p>
-            <p className="text-xs text-[#D4A5A5] tracking-wider">
-              DEMO WEBSITE — PORTFOLIO CONCEPT
+            <p className="text-xs text-[#B08D57] tracking-wider">
+              MADE WITH LIGHT &amp; WANDERLUST
             </p>
           </div>
         </div>

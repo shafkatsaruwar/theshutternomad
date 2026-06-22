@@ -36,7 +36,7 @@ export default function NavBar({ currentPage }) {
             to={createPageUrl("Home")}
             className="font-serif text-2xl tracking-wide text-[#1a1a1a]"
           >
-            Aurelia
+            The Shutter Nomad
           </Link>
 
           {/* Desktop Navigation */}
@@ -45,9 +45,9 @@ export default function NavBar({ currentPage }) {
               <Link
                 key={link.page}
                 to={createPageUrl(link.page)}
-                className={`text-sm tracking-widest uppercase transition-all duration-300 hover:text-[#9C8B7A] ${
+                className={`text-sm tracking-widest uppercase transition-all duration-300 hover:text-[#B08D57] ${
                   currentPage === link.page
-                    ? "text-[#9C8B7A]"
+                    ? "text-[#B08D57]"
                     : "text-[#1a1a1a]"
                 }`}
               >
@@ -78,7 +78,7 @@ export default function NavBar({ currentPage }) {
             <div className="flex flex-col h-full px-8 py-6">
               <div className="flex items-center justify-between">
                 <span className="font-serif text-2xl tracking-wide text-[#1a1a1a]">
-                  Aurelia
+                  The Shutter Nomad
                 </span>
                 <button
                   onClick={() => setMobileOpen(false)}
@@ -101,7 +101,7 @@ export default function NavBar({ currentPage }) {
                       onClick={() => setMobileOpen(false)}
                       className={`text-3xl font-serif tracking-wide transition-colors ${
                         currentPage === link.page
-                          ? "text-[#9C8B7A]"
+                          ? "text-[#B08D57]"
                           : "text-[#1a1a1a]"
                       }`}
                     >
