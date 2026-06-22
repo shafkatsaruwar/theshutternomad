@@ -170,6 +170,34 @@ export default function Gallery() {
       category: "Nature",
       title: "Pale Cluster",
       size: "small"
+    },
+    {
+      id: 24,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/829448f7f_IMG_3782.jpg",
+      category: "Architecture",
+      title: "The Keeper's Light",
+      size: "large"
+    },
+    {
+      id: 25,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/a5ec27b78_IMG_3844.jpg",
+      category: "Architecture",
+      title: "Skyward",
+      size: "large"
+    },
+    {
+      id: 26,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/106fd043a_IMG_4165.jpg",
+      category: "Nature",
+      title: "Churning Wake",
+      size: "medium"
+    },
+    {
+      id: 27,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/73240599b_IMG_4032.jpg",
+      category: "Architecture",
+      title: "Cliffside Sentinel",
+      size: "large"
     }
   ];
 
