@@ -183,7 +183,7 @@ export default function Home() {
                   The Story
                 </p>
                 <h2 className="font-serif text-4xl md:text-5xl text-[#1a1a1a] mb-6">
-                  A Life Behind the Lens
+                  The Traveler's Eye
                 </h2>
                 <p className="text-[#3D2B1F]/70 leading-relaxed mb-8">
                   For over a decade, I've wandered from the volcanic shores of Iceland 
