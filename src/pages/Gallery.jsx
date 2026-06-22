@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { X, MapPin, Calendar } from "lucide-react";
 import FadeIn from "@/components/ui/FadeIn";
 
 export default function Gallery() {
@@ -15,189 +15,243 @@ export default function Gallery() {
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/1c313548b_IMG_0852.jpg",
       category: "Architecture",
       title: "Glass & Sky",
-      size: "large"
+      size: "large",
+      location: "",
+      date: ""
     },
     {
       id: 2,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/04166296c_4A834112-AA0F-461D-AA23-26C6EF55DAAF_L0_001-7_27_20253_05_27PM.jpg",
       category: "Portrait",
       title: "Quiet Light",
-      size: "large"
+      size: "large",
+      location: "",
+      date: "July 27, 2025"
     },
     {
       id: 3,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/bbf81d8a5__MG_0313-2.jpg",
       category: "Nature",
       title: "Cherry Blossom",
-      size: "small"
+      size: "small",
+      location: "",
+      date: ""
     },
     {
       id: 4,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/91362395f_5CF54954-0AC4-4C4B-AAE2-5672B92A32FB_L0_001-7_27_20254_45_49PM.jpg",
       category: "Still Life",
       title: "The Satchel",
-      size: "medium"
+      size: "medium",
+      location: "",
+      date: "July 27, 2025"
     },
     {
       id: 5,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/71ddfe5a2_C94CE655-24EA-4BD9-83B8-E4060707B2AA_L0_001-4_28_20258_57_27PM.jpg",
       category: "Nature",
       title: "Quince Bloom",
-      size: "medium"
+      size: "medium",
+      location: "",
+      date: "April 28, 2025"
     },
     {
       id: 6,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/d1ed17e82_ChapterOpenedWandReadyLettheMagicUnfold.jpg",
       category: "Still Life",
       title: "Chapter Opened",
-      size: "large"
+      size: "large",
+      location: "",
+      date: ""
     },
     {
       id: 7,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/27b29bd74__MG_0321-2.jpg",
       category: "Nature",
       title: "Magnolia",
-      size: "small"
+      size: "small",
+      location: "",
+      date: ""
     },
     {
       id: 8,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/8837587ce__MG_0301-2.jpg",
       category: "Nature",
       title: "Crimson Branch",
-      size: "small"
+      size: "small",
+      location: "",
+      date: ""
     },
     {
       id: 9,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/5906171d9_039551D5-2D90-4FA7-8631-83D4C14F3096_L0_001-7_27_20254_45_49PM.jpg",
       category: "Still Life",
       title: "Reflection",
-      size: "small"
+      size: "small",
+      location: "",
+      date: "July 27, 2025"
     },
     {
       id: 10,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/eeb68f1da__MG_0321-3.jpg",
       category: "Nature",
       title: "Petals",
-      size: "medium"
+      size: "medium",
+      location: "",
+      date: ""
     },
     {
       id: 11,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/f2ea35e3d_DE73AA4E-9C65-4138-BC4C-BA43C6CE1265_1_105_c.jpg",
       category: "Street",
       title: "Harbor Story",
-      size: "small"
+      size: "small",
+      location: "",
+      date: ""
     },
     {
       id: 12,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/dea8cc827_35E1E874-002B-4D79-9A31-4B7BB98D7CE4_1_105_c.jpg",
       category: "Nature",
       title: "First Bloom",
-      size: "small"
+      size: "small",
+      location: "",
+      date: ""
     },
     {
       id: 13,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/2bbd7c56c_IMG_3782.jpg",
       category: "Architecture",
       title: "Portland Head",
-      size: "large"
+      size: "large",
+      location: "Portland, Maine",
+      date: ""
     },
     {
       id: 14,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/e202c0133_IMG_3882.jpg",
       category: "Nature",
       title: "Atlantic Calm",
-      size: "large"
+      size: "large",
+      location: "",
+      date: ""
     },
     {
       id: 15,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/41668645e_IMG_4032.jpg",
       category: "Architecture",
       title: "Headland",
-      size: "large"
+      size: "large",
+      location: "",
+      date: ""
     },
     {
       id: 16,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/5320a059d_IMG_4182.jpg",
       category: "Nature",
       title: "Sea Foam",
-      size: "medium"
+      size: "medium",
+      location: "",
+      date: ""
     },
     {
       id: 17,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/46d5e647e_NewHavenConnecticut__MG_0143.jpg",
       category: "Architecture",
       title: "New Haven Duo",
-      size: "large"
+      size: "large",
+      location: "New Haven, Connecticut",
+      date: ""
     },
     {
       id: 18,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/caa62965f_NewHavenConnecticut__MG_0156.jpg",
       category: "Still Life",
       title: "Arranged Bloom",
-      size: "medium"
+      size: "medium",
+      location: "New Haven, Connecticut",
+      date: ""
     },
     {
       id: 19,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/287e4f486_NewHavenConnecticut__MG_0272.jpg",
       category: "Nature",
       title: "Weeping Cherry",
-      size: "medium"
+      size: "medium",
+      location: "New Haven, Connecticut",
+      date: ""
     },
     {
       id: 20,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/8cad393c3_NewHavenConnecticut__MG_0273.jpg",
       category: "Nature",
       title: "Petal Drift",
-      size: "small"
+      size: "small",
+      location: "New Haven, Connecticut",
+      date: ""
     },
     {
       id: 21,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/688a445ff_NewHavenConnecticut__MG_0279.jpg",
       category: "Nature",
       title: "Hanging Blossom",
-      size: "small"
+      size: "small",
+      location: "New Haven, Connecticut",
+      date: ""
     },
     {
       id: 22,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/39cb93ca0_NewHavenConnecticut__MG_0301.jpg",
       category: "Nature",
       title: "Crimson Bloom",
-      size: "small"
+      size: "small",
+      location: "New Haven, Connecticut",
+      date: ""
     },
     {
       id: 23,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/4e84bc77d_NewHavenConnecticut__MG_0316.jpg",
       category: "Nature",
       title: "Pale Cluster",
-      size: "small"
+      size: "small",
+      location: "New Haven, Connecticut",
+      date: ""
     },
     {
       id: 24,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/829448f7f_IMG_3782.jpg",
       category: "Architecture",
       title: "The Keeper's Light",
-      size: "large"
+      size: "large",
+      location: "Portland, Maine",
+      date: ""
     },
     {
       id: 25,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/a5ec27b78_IMG_3844.jpg",
       category: "Architecture",
       title: "Skyward",
-      size: "large"
+      size: "large",
+      location: "",
+      date: ""
     },
     {
       id: 26,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/106fd043a_IMG_4165.jpg",
       category: "Nature",
       title: "Churning Wake",
-      size: "medium"
+      size: "medium",
+      location: "",
+      date: ""
     },
     {
       id: 27,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/73240599b_IMG_4032.jpg",
       category: "Architecture",
       title: "Cliffside Sentinel",
-      size: "large"
+      size: "large",
+      location: "",
+      date: ""
     }
   ];
 
@@ -279,9 +333,23 @@ export default function Gallery() {
                       <p className="text-white/60 text-xs tracking-[0.3em] uppercase mb-2">
                         {image.category}
                       </p>
-                      <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white">
+                      <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white mb-3">
                         {image.title}
                       </h3>
+                      <div className="flex flex-wrap gap-x-5 gap-y-1 text-white/70 text-xs tracking-wider">
+                        {image.location && (
+                          <span className="inline-flex items-center gap-1.5">
+                            <MapPin className="w-3.5 h-3.5 text-[#B08D57]" />
+                            {image.location}
+                          </span>
+                        )}
+                        {image.date && (
+                          <span className="inline-flex items-center gap-1.5">
+                            <Calendar className="w-3.5 h-3.5 text-[#B08D57]" />
+                            {image.date}
+                          </span>
+                        )}
+                      </div>
                     </div>
                     <span className="hidden md:block text-white/40 text-sm tracking-widest">
                       {String(index + 1).padStart(2, "0")}
@@ -327,9 +395,23 @@ export default function Gallery() {
                 <p className="text-white/50 text-xs tracking-widest uppercase mb-2">
                   {selectedImage.category}
                 </p>
-                <h3 className="font-serif text-2xl text-white">
+                <h3 className="font-serif text-2xl text-white mb-3">
                   {selectedImage.title}
                 </h3>
+                <div className="flex justify-center flex-wrap gap-x-5 gap-y-1 text-white/70 text-sm">
+                  {selectedImage.location && (
+                    <span className="inline-flex items-center gap-1.5">
+                      <MapPin className="w-4 h-4 text-[#B08D57]" />
+                      {selectedImage.location}
+                    </span>
+                  )}
+                  {selectedImage.date && (
+                    <span className="inline-flex items-center gap-1.5">
+                      <Calendar className="w-4 h-4 text-[#B08D57]" />
+                      {selectedImage.date}
+                    </span>
+                  )}
+                </div>
               </div>
             </motion.div>
           </motion.div>
