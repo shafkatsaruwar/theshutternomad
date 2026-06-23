@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import FadeIn from "@/components/ui/FadeIn";
+import AvailabilitySlots from "@/components/booking/AvailabilitySlots";
 
 export default function Booking() {
   const [submitted, setSubmitted] = useState(false);
@@ -109,6 +110,25 @@ export default function Booking() {
             </div>
           </FadeIn>
         </div>
+      </div>
+
+      {/* Available Slots */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-24">
+        <FadeIn>
+          <div className="mb-10">
+            <p className="text-[#B08D57] text-sm tracking-[0.3em] uppercase mb-4">
+              Real-Time Availability
+            </p>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#1a1a1a] mb-4">
+              Open Session Slots
+            </h2>
+            <p className="text-[#3D2B1F]/70 leading-relaxed max-w-xl">
+              These are my live, bookable slots synced from Calendly. Pick a time
+              that works for you and complete your booking in a few clicks.
+            </p>
+          </div>
+        </FadeIn>
+        <AvailabilitySlots />
       </div>
 
       {/* Form Section */}
