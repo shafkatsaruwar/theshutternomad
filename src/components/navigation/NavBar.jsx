@@ -19,6 +19,7 @@ export default function NavBar({ currentPage }) {
     { name: "Gallery", page: "Gallery" },
     { name: "Services", page: "Services" },
     { name: "About", page: "About" },
+    { name: "Contact", page: "Contact" },
     { name: "Book", page: "Booking" },
   ];
 

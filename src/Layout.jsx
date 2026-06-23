@@ -65,7 +65,7 @@ export default function Layout({ children, currentPageName }) {
             <div>
               <h4 className="text-xs tracking-widest uppercase mb-4 text-white/40">Navigate</h4>
               <div className="flex flex-col gap-3">
-                {["Home", "Gallery", "Services", "About", "Booking"].map((page) => (
+                {["Home", "Gallery", "Services", "About", "Contact", "Journal", "Booking"].map((page) => (
                   <Link
                     key={page}
                     to={createPageUrl(page)}
