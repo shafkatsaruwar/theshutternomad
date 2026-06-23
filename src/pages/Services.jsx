@@ -45,7 +45,6 @@ export default function Services() {
 
   const addOns = [
     { name: "Additional Hour of Coverage", price: "$250" },
-    { name: "Second Photographer", price: "$400" },
     { name: "Rush Edit (48-hour delivery)", price: "$300" },
     { name: "Online Gallery & Sharing", price: "Complimentary" }
   ];
