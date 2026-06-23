@@ -89,7 +89,6 @@ export default function Booking() {
               <div>
                 <h3 className="font-serif text-xl text-[#1a1a1a] mb-2">Based Out Of</h3>
                 <p className="text-[#3D2B1F]/70">
-                  Available worldwide<br />
                   Currently in Boston, MA, USA
                 </p>
               </div>
