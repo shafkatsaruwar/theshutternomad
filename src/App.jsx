@@ -5,6 +5,7 @@ import NavigationTracker from '@/lib/NavigationTracker'
 import { pagesConfig } from './pages.config'
 import Contact from './pages/Contact';
 import Journal from './pages/Journal';
+import Prints from './pages/Prints';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
@@ -60,6 +61,11 @@ const AuthenticatedApp = () => {
           }
         />
       ))}
+      <Route path="/Prints" element={
+        <LayoutWrapper currentPageName="Prints">
+          <Prints />
+        </LayoutWrapper>
+      } />
       <Route path="/Contact" element={
         <LayoutWrapper currentPageName="Contact">
           <Contact />

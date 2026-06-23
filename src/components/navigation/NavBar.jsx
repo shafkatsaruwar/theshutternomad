@@ -17,6 +17,7 @@ export default function NavBar({ currentPage }) {
   const navLinks = [
     { name: "Portfolio", page: "Home" },
     { name: "Gallery", page: "Gallery" },
+    { name: "Prints", page: "Prints" },
     { name: "Services", page: "Services" },
     { name: "About", page: "About" },
     { name: "Contact", page: "Contact" },
