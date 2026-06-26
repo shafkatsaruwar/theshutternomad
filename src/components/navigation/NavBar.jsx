@@ -36,7 +36,9 @@ export default function NavBar({ currentPage }) {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
           <Link
             to={createPageUrl("Home")}
-            className="font-serif text-2xl tracking-wide text-[#1a1a1a]"
+            className={`font-serif text-2xl tracking-wide transition-colors duration-300 ${
+              isScrolled ? "text-[#1a1a1a]" : "text-white"
+            }`}
           >
             The Shutter Nomad
           </Link>
@@ -50,7 +52,7 @@ export default function NavBar({ currentPage }) {
                 className={`text-sm tracking-widest uppercase transition-all duration-300 hover:text-[#B08D57] ${
                   currentPage === link.page
                     ? "text-[#B08D57]"
-                    : "text-[#1a1a1a]"
+                    : isScrolled ? "text-[#1a1a1a]" : "text-white"
                 }`}
               >
                 {link.name}
@@ -61,7 +63,9 @@ export default function NavBar({ currentPage }) {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileOpen(true)}
-            className="md:hidden p-2 text-[#1a1a1a]"
+            className={`md:hidden p-2 transition-colors duration-300 ${
+              isScrolled ? "text-[#1a1a1a]" : "text-white"
+            }`}
           >
             <Menu className="w-6 h-6" />
           </button>
