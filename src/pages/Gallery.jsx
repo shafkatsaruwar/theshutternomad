@@ -155,15 +155,6 @@ export default function Gallery() {
       date: ""
     },
     {
-      id: 17,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/46d5e647e_NewHavenConnecticut__MG_0143.jpg",
-      category: "Architecture",
-      title: "New Haven Duo",
-      size: "large",
-      location: "New Haven, Connecticut",
-      date: ""
-    },
-    {
       id: 18,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/caa62965f_NewHavenConnecticut__MG_0156.jpg",
       category: "Still Life",
