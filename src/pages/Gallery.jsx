@@ -243,6 +243,51 @@ export default function Gallery() {
       size: "large",
       location: "",
       date: ""
+    },
+    {
+      id: 28,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/3a79f0ac7_IMG_4926.jpg",
+      category: "Portrait",
+      title: "Golden Years",
+      size: "large",
+      location: "",
+      date: ""
+    },
+    {
+      id: 29,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/bee0242ff_IMG_4801.jpg",
+      category: "Portrait",
+      title: "Soft Afternoon",
+      size: "large",
+      location: "",
+      date: ""
+    },
+    {
+      id: 30,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/34317c6ef_IMG_4741.jpg",
+      category: "Portrait",
+      title: "The Wanderer",
+      size: "medium",
+      location: "",
+      date: ""
+    },
+    {
+      id: 31,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/9f1fe0e55_IMG_4720.jpg",
+      category: "Portrait",
+      title: "Together",
+      size: "large",
+      location: "",
+      date: ""
+    },
+    {
+      id: 32,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/648edce9e_IMG_4604.jpg",
+      category: "Portrait",
+      title: "Two of a Kind",
+      size: "medium",
+      location: "",
+      date: ""
     }
   ];
 
