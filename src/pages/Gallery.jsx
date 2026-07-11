@@ -38,6 +38,15 @@ export default function Gallery() {
       date: ""
     },
     {
+      id: 28,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/3a79f0ac7_IMG_4926.jpg",
+      category: "Portrait",
+      title: "Golden Years",
+      size: "large",
+      location: "",
+      date: ""
+    },
+    {
       id: 4,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/91362395f_5CF54954-0AC4-4C4B-AAE2-5672B92A32FB_L0_001-7_27_20254_45_49PM.jpg",
       category: "Still Life",
@@ -56,6 +65,15 @@ export default function Gallery() {
       date: "April 28, 2025"
     },
     {
+      id: 33,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/96da981f2_IMG_3994.jpg",
+      category: "Portrait",
+      title: "Coastal Gaze",
+      size: "medium",
+      location: "",
+      date: ""
+    },
+    {
       id: 6,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/d1ed17e82_ChapterOpenedWandReadyLettheMagicUnfold.jpg",
       category: "Still Life",
@@ -70,6 +88,15 @@ export default function Gallery() {
       category: "Nature",
       title: "Magnolia",
       size: "small",
+      location: "",
+      date: ""
+    },
+    {
+      id: 29,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/bee0242ff_IMG_4801.jpg",
+      category: "Portrait",
+      title: "Soft Afternoon",
+      size: "large",
       location: "",
       date: ""
     },
@@ -92,6 +119,15 @@ export default function Gallery() {
       date: "July 27, 2025"
     },
     {
+      id: 30,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/34317c6ef_IMG_4741.jpg",
+      category: "Portrait",
+      title: "The Wanderer",
+      size: "medium",
+      location: "",
+      date: ""
+    },
+    {
       id: 10,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/eeb68f1da__MG_0321-3.jpg",
       category: "Nature",
@@ -106,6 +142,15 @@ export default function Gallery() {
       category: "Street",
       title: "Harbor Story",
       size: "small",
+      location: "",
+      date: ""
+    },
+    {
+      id: 34,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/77530015e_IMG_3987.jpg",
+      category: "Portrait",
+      title: "Seaside Smile",
+      size: "medium",
       location: "",
       date: ""
     },
@@ -128,6 +173,15 @@ export default function Gallery() {
       date: ""
     },
     {
+      id: 31,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/9f1fe0e55_IMG_4720.jpg",
+      category: "Portrait",
+      title: "Together",
+      size: "large",
+      location: "",
+      date: ""
+    },
+    {
       id: 14,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/e202c0133_IMG_3882.jpg",
       category: "Nature",
@@ -142,6 +196,15 @@ export default function Gallery() {
       category: "Architecture",
       title: "Headland",
       size: "large",
+      location: "",
+      date: ""
+    },
+    {
+      id: 32,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/648edce9e_IMG_4604.jpg",
+      category: "Portrait",
+      title: "Two of a Kind",
+      size: "medium",
       location: "",
       date: ""
     },
@@ -164,6 +227,15 @@ export default function Gallery() {
       date: ""
     },
     {
+      id: 35,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/b30ad9b2a_IMG_2619.jpg",
+      category: "Portrait",
+      title: "Hearthside",
+      size: "medium",
+      location: "",
+      date: ""
+    },
+    {
       id: 19,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/287e4f486_NewHavenConnecticut__MG_0272.jpg",
       category: "Nature",
@@ -182,28 +254,19 @@ export default function Gallery() {
       date: ""
     },
     {
+      id: 36,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/8bd224388_IMG_1708.jpg",
+      category: "Portrait",
+      title: "Celebration",
+      size: "medium",
+      location: "",
+      date: ""
+    },
+    {
       id: 21,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/688a445ff_NewHavenConnecticut__MG_0279.jpg",
       category: "Nature",
       title: "Hanging Blossom",
-      size: "small",
-      location: "New Haven, Connecticut",
-      date: ""
-    },
-    {
-      id: 22,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/39cb93ca0_NewHavenConnecticut__MG_0301.jpg",
-      category: "Nature",
-      title: "Crimson Bloom",
-      size: "small",
-      location: "New Haven, Connecticut",
-      date: ""
-    },
-    {
-      id: 23,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/4e84bc77d_NewHavenConnecticut__MG_0316.jpg",
-      category: "Nature",
-      title: "Pale Cluster",
       size: "small",
       location: "New Haven, Connecticut",
       date: ""
@@ -215,6 +278,15 @@ export default function Gallery() {
       title: "The Keeper's Light",
       size: "large",
       location: "Portland, Maine",
+      date: ""
+    },
+    {
+      id: 22,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/39cb93ca0_NewHavenConnecticut__MG_0301.jpg",
+      category: "Nature",
+      title: "Crimson Bloom",
+      size: "small",
+      location: "New Haven, Connecticut",
       date: ""
     },
     {
@@ -236,92 +308,20 @@ export default function Gallery() {
       date: ""
     },
     {
+      id: 23,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/4e84bc77d_NewHavenConnecticut__MG_0316.jpg",
+      category: "Nature",
+      title: "Pale Cluster",
+      size: "small",
+      location: "New Haven, Connecticut",
+      date: ""
+    },
+    {
       id: 27,
       src: "https://media.base44.com/images/public/6a398250071013524ae383a2/73240599b_IMG_4032.jpg",
       category: "Architecture",
       title: "Cliffside Sentinel",
       size: "large",
-      location: "",
-      date: ""
-    },
-    {
-      id: 28,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/3a79f0ac7_IMG_4926.jpg",
-      category: "Portrait",
-      title: "Golden Years",
-      size: "large",
-      location: "",
-      date: ""
-    },
-    {
-      id: 29,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/bee0242ff_IMG_4801.jpg",
-      category: "Portrait",
-      title: "Soft Afternoon",
-      size: "large",
-      location: "",
-      date: ""
-    },
-    {
-      id: 30,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/34317c6ef_IMG_4741.jpg",
-      category: "Portrait",
-      title: "The Wanderer",
-      size: "medium",
-      location: "",
-      date: ""
-    },
-    {
-      id: 31,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/9f1fe0e55_IMG_4720.jpg",
-      category: "Portrait",
-      title: "Together",
-      size: "large",
-      location: "",
-      date: ""
-    },
-    {
-      id: 32,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/648edce9e_IMG_4604.jpg",
-      category: "Portrait",
-      title: "Two of a Kind",
-      size: "medium",
-      location: "",
-      date: ""
-    },
-    {
-      id: 33,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/96da981f2_IMG_3994.jpg",
-      category: "Portrait",
-      title: "Coastal Gaze",
-      size: "medium",
-      location: "",
-      date: ""
-    },
-    {
-      id: 34,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/77530015e_IMG_3987.jpg",
-      category: "Portrait",
-      title: "Seaside Smile",
-      size: "medium",
-      location: "",
-      date: ""
-    },
-    {
-      id: 35,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/b30ad9b2a_IMG_2619.jpg",
-      category: "Portrait",
-      title: "Hearthside",
-      size: "medium",
-      location: "",
-      date: ""
-    },
-    {
-      id: 36,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/8bd224388_IMG_1708.jpg",
-      category: "Portrait",
-      title: "Celebration",
-      size: "medium",
       location: "",
       date: ""
     }
