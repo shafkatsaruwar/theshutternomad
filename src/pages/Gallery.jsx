@@ -288,6 +288,42 @@ export default function Gallery() {
       size: "medium",
       location: "",
       date: ""
+    },
+    {
+      id: 33,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/96da981f2_IMG_3994.jpg",
+      category: "Portrait",
+      title: "Coastal Gaze",
+      size: "medium",
+      location: "",
+      date: ""
+    },
+    {
+      id: 34,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/77530015e_IMG_3987.jpg",
+      category: "Portrait",
+      title: "Seaside Smile",
+      size: "medium",
+      location: "",
+      date: ""
+    },
+    {
+      id: 35,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/b30ad9b2a_IMG_2619.jpg",
+      category: "Portrait",
+      title: "Hearthside",
+      size: "medium",
+      location: "",
+      date: ""
+    },
+    {
+      id: 36,
+      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/8bd224388_IMG_1708.jpg",
+      category: "Portrait",
+      title: "Celebration",
+      size: "medium",
+      location: "",
+      date: ""
     }
   ];
 
