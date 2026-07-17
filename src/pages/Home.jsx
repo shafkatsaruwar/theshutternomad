@@ -9,13 +9,13 @@ export default function Home() {
   const featuredWorks = [
     {
       id: 1,
-      image: "https://media.base44.com/images/public/6a398250071013524ae383a2/829448f7f_IMG_3782.jpg",
+      image: "/images/portfolio/01-829448f7f_IMG_3782.jpg",
       title: "The Keeper's Light",
       category: "Architecture"
     },
     {
       id: 2,
-      image: "https://media.base44.com/images/public/6a398250071013524ae383a2/287e4f486_NewHavenConnecticut__MG_0272.jpg",
+      image: "/images/portfolio/02-287e4f486_NewHavenConnecticut__MG_0272.jpg",
       title: "Weeping Cherry",
       category: "Nature"
     }
@@ -29,7 +29,7 @@ export default function Home() {
           <div 
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: "url('https://media.base44.com/images/public/6a398250071013524ae383a2/0853e65bd_IMG_4879.jpg')"
+              backgroundImage: "url('/images/portfolio/03-0853e65bd_IMG_4879.jpg')"
             }}
           />
           <div className="absolute inset-0 bg-[#1a1a1a]/50" />
@@ -170,7 +170,7 @@ export default function Home() {
             <FadeIn direction="left">
               <div className="aspect-[3/4] overflow-hidden">
                 <img
-                  src="https://media.base44.com/images/public/6a398250071013524ae383a2/51ace835a_IMG_4526.jpg"
+                  src="/images/portfolio/04-51ace835a_IMG_4526.jpg"
                   alt="The photographer"
                   className="w-full h-full object-cover"
                 />

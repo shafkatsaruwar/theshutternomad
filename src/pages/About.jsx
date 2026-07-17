@@ -31,7 +31,7 @@ export default function About() {
           <FadeIn direction="left">
             <div className="aspect-[3/4] overflow-hidden">
               <img
-                src="https://media.base44.com/images/public/6a398250071013524ae383a2/2728928e0_1500D7A9-F52A-46D1-98B7-B7337C4B5F46_4_5005_c.jpg"
+                src="/images/portfolio/38-2728928e0_1500D7A9-F52A-46D1-98B7-B7337C4B5F46_4_5005_c.jpg"
                 alt="The Shutter Nomad"
                 className="w-full h-full object-cover"
               />
@@ -150,7 +150,7 @@ export default function About() {
           <FadeIn direction="left">
             <div className="aspect-[16/9] overflow-hidden">
               <img
-                src="https://media.base44.com/images/public/6a398250071013524ae383a2/9901e96e0_IMG_0149_1.jpg"
+                src="/images/portfolio/39-9901e96e0_IMG_0149_1.jpg"
                 alt="The gear"
                 className="w-full h-full object-cover"
               />

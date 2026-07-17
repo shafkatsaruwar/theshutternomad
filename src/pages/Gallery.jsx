@@ -12,7 +12,7 @@ export default function Gallery() {
   const galleryImages = [
     {
       id: 1,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/1c313548b_IMG_0852.jpg",
+      src: "/images/portfolio/05-1c313548b_IMG_0852.jpg",
       category: "Architecture",
       title: "Glass & Sky",
       size: "large",
@@ -21,7 +21,7 @@ export default function Gallery() {
     },
     {
       id: 2,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/04166296c_4A834112-AA0F-461D-AA23-26C6EF55DAAF_L0_001-7_27_20253_05_27PM.jpg",
+      src: "/images/portfolio/06-04166296c_4A834112-AA0F-461D-AA23-26C6EF55DAAF_L0_001-7_27_20253_05_27PM.jpg",
       category: "Portrait",
       title: "Quiet Light",
       size: "large",
@@ -30,7 +30,7 @@ export default function Gallery() {
     },
     {
       id: 3,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/bbf81d8a5__MG_0313-2.jpg",
+      src: "/images/portfolio/07-bbf81d8a5__MG_0313-2.jpg",
       category: "Nature",
       title: "Cherry Blossom",
       size: "small",
@@ -39,7 +39,7 @@ export default function Gallery() {
     },
     {
       id: 28,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/3a79f0ac7_IMG_4926.jpg",
+      src: "/images/portfolio/08-3a79f0ac7_IMG_4926.jpg",
       category: "Portrait",
       title: "Golden Years",
       size: "large",
@@ -48,7 +48,7 @@ export default function Gallery() {
     },
     {
       id: 4,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/91362395f_5CF54954-0AC4-4C4B-AAE2-5672B92A32FB_L0_001-7_27_20254_45_49PM.jpg",
+      src: "/images/portfolio/09-91362395f_5CF54954-0AC4-4C4B-AAE2-5672B92A32FB_L0_001-7_27_20254_45_49PM.jpg",
       category: "Still Life",
       title: "The Satchel",
       size: "medium",
@@ -57,7 +57,7 @@ export default function Gallery() {
     },
     {
       id: 5,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/71ddfe5a2_C94CE655-24EA-4BD9-83B8-E4060707B2AA_L0_001-4_28_20258_57_27PM.jpg",
+      src: "/images/portfolio/10-71ddfe5a2_C94CE655-24EA-4BD9-83B8-E4060707B2AA_L0_001-4_28_20258_57_27PM.jpg",
       category: "Nature",
       title: "Quince Bloom",
       size: "medium",
@@ -66,7 +66,7 @@ export default function Gallery() {
     },
     {
       id: 33,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/96da981f2_IMG_3994.jpg",
+      src: "/images/portfolio/11-96da981f2_IMG_3994.jpg",
       category: "Portrait",
       title: "Coastal Gaze",
       size: "medium",
@@ -75,7 +75,7 @@ export default function Gallery() {
     },
     {
       id: 6,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/d1ed17e82_ChapterOpenedWandReadyLettheMagicUnfold.jpg",
+      src: "/images/portfolio/12-d1ed17e82_ChapterOpenedWandReadyLettheMagicUnfold.jpg",
       category: "Still Life",
       title: "Chapter Opened",
       size: "large",
@@ -84,7 +84,7 @@ export default function Gallery() {
     },
     {
       id: 7,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/27b29bd74__MG_0321-2.jpg",
+      src: "/images/portfolio/13-27b29bd74__MG_0321-2.jpg",
       category: "Nature",
       title: "Magnolia",
       size: "small",
@@ -93,7 +93,7 @@ export default function Gallery() {
     },
     {
       id: 29,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/bee0242ff_IMG_4801.jpg",
+      src: "/images/portfolio/14-bee0242ff_IMG_4801.jpg",
       category: "Portrait",
       title: "Soft Afternoon",
       size: "large",
@@ -102,7 +102,7 @@ export default function Gallery() {
     },
     {
       id: 8,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/8837587ce__MG_0301-2.jpg",
+      src: "/images/portfolio/15-8837587ce__MG_0301-2.jpg",
       category: "Nature",
       title: "Crimson Branch",
       size: "small",
@@ -111,7 +111,7 @@ export default function Gallery() {
     },
     {
       id: 9,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/5906171d9_039551D5-2D90-4FA7-8631-83D4C14F3096_L0_001-7_27_20254_45_49PM.jpg",
+      src: "/images/portfolio/16-5906171d9_039551D5-2D90-4FA7-8631-83D4C14F3096_L0_001-7_27_20254_45_49PM.jpg",
       category: "Still Life",
       title: "Reflection",
       size: "small",
@@ -120,7 +120,7 @@ export default function Gallery() {
     },
     {
       id: 30,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/34317c6ef_IMG_4741.jpg",
+      src: "/images/portfolio/17-34317c6ef_IMG_4741.jpg",
       category: "Portrait",
       title: "The Wanderer",
       size: "medium",
@@ -129,7 +129,7 @@ export default function Gallery() {
     },
     {
       id: 10,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/eeb68f1da__MG_0321-3.jpg",
+      src: "/images/portfolio/18-eeb68f1da__MG_0321-3.jpg",
       category: "Nature",
       title: "Petals",
       size: "medium",
@@ -138,7 +138,7 @@ export default function Gallery() {
     },
     {
       id: 11,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/f2ea35e3d_DE73AA4E-9C65-4138-BC4C-BA43C6CE1265_1_105_c.jpg",
+      src: "/images/portfolio/19-f2ea35e3d_DE73AA4E-9C65-4138-BC4C-BA43C6CE1265_1_105_c.jpg",
       category: "Street",
       title: "Harbor Story",
       size: "small",
@@ -147,7 +147,7 @@ export default function Gallery() {
     },
     {
       id: 34,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/77530015e_IMG_3987.jpg",
+      src: "/images/portfolio/20-77530015e_IMG_3987.jpg",
       category: "Portrait",
       title: "Seaside Smile",
       size: "medium",
@@ -156,7 +156,7 @@ export default function Gallery() {
     },
     {
       id: 12,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/dea8cc827_35E1E874-002B-4D79-9A31-4B7BB98D7CE4_1_105_c.jpg",
+      src: "/images/portfolio/21-dea8cc827_35E1E874-002B-4D79-9A31-4B7BB98D7CE4_1_105_c.jpg",
       category: "Nature",
       title: "First Bloom",
       size: "small",
@@ -165,7 +165,7 @@ export default function Gallery() {
     },
     {
       id: 13,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/2bbd7c56c_IMG_3782.jpg",
+      src: "/images/portfolio/22-2bbd7c56c_IMG_3782.jpg",
       category: "Architecture",
       title: "Portland Head",
       size: "large",
@@ -174,7 +174,7 @@ export default function Gallery() {
     },
     {
       id: 31,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/9f1fe0e55_IMG_4720.jpg",
+      src: "/images/portfolio/23-9f1fe0e55_IMG_4720.jpg",
       category: "Portrait",
       title: "Together",
       size: "large",
@@ -183,7 +183,7 @@ export default function Gallery() {
     },
     {
       id: 14,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/e202c0133_IMG_3882.jpg",
+      src: "/images/portfolio/24-e202c0133_IMG_3882.jpg",
       category: "Nature",
       title: "Atlantic Calm",
       size: "large",
@@ -192,7 +192,7 @@ export default function Gallery() {
     },
     {
       id: 15,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/41668645e_IMG_4032.jpg",
+      src: "/images/portfolio/25-41668645e_IMG_4032.jpg",
       category: "Architecture",
       title: "Headland",
       size: "large",
@@ -201,7 +201,7 @@ export default function Gallery() {
     },
     {
       id: 32,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/648edce9e_IMG_4604.jpg",
+      src: "/images/portfolio/26-648edce9e_IMG_4604.jpg",
       category: "Portrait",
       title: "Two of a Kind",
       size: "medium",
@@ -210,7 +210,7 @@ export default function Gallery() {
     },
     {
       id: 16,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/5320a059d_IMG_4182.jpg",
+      src: "/images/portfolio/27-5320a059d_IMG_4182.jpg",
       category: "Nature",
       title: "Sea Foam",
       size: "medium",
@@ -219,7 +219,7 @@ export default function Gallery() {
     },
     {
       id: 18,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/caa62965f_NewHavenConnecticut__MG_0156.jpg",
+      src: "/images/portfolio/28-caa62965f_NewHavenConnecticut__MG_0156.jpg",
       category: "Still Life",
       title: "Arranged Bloom",
       size: "medium",
@@ -228,7 +228,7 @@ export default function Gallery() {
     },
     {
       id: 35,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/b30ad9b2a_IMG_2619.jpg",
+      src: "/images/portfolio/29-b30ad9b2a_IMG_2619.jpg",
       category: "Portrait",
       title: "Hearthside",
       size: "medium",
@@ -237,7 +237,7 @@ export default function Gallery() {
     },
     {
       id: 19,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/287e4f486_NewHavenConnecticut__MG_0272.jpg",
+      src: "/images/portfolio/02-287e4f486_NewHavenConnecticut__MG_0272.jpg",
       category: "Nature",
       title: "Weeping Cherry",
       size: "medium",
@@ -246,7 +246,7 @@ export default function Gallery() {
     },
     {
       id: 20,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/8cad393c3_NewHavenConnecticut__MG_0273.jpg",
+      src: "/images/portfolio/30-8cad393c3_NewHavenConnecticut__MG_0273.jpg",
       category: "Nature",
       title: "Petal Drift",
       size: "small",
@@ -255,7 +255,7 @@ export default function Gallery() {
     },
     {
       id: 36,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/8bd224388_IMG_1708.jpg",
+      src: "/images/portfolio/31-8bd224388_IMG_1708.jpg",
       category: "Portrait",
       title: "Celebration",
       size: "medium",
@@ -264,7 +264,7 @@ export default function Gallery() {
     },
     {
       id: 21,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/688a445ff_NewHavenConnecticut__MG_0279.jpg",
+      src: "/images/portfolio/32-688a445ff_NewHavenConnecticut__MG_0279.jpg",
       category: "Nature",
       title: "Hanging Blossom",
       size: "small",
@@ -273,7 +273,7 @@ export default function Gallery() {
     },
     {
       id: 24,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/829448f7f_IMG_3782.jpg",
+      src: "/images/portfolio/01-829448f7f_IMG_3782.jpg",
       category: "Architecture",
       title: "The Keeper's Light",
       size: "large",
@@ -282,7 +282,7 @@ export default function Gallery() {
     },
     {
       id: 22,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/39cb93ca0_NewHavenConnecticut__MG_0301.jpg",
+      src: "/images/portfolio/33-39cb93ca0_NewHavenConnecticut__MG_0301.jpg",
       category: "Nature",
       title: "Crimson Bloom",
       size: "small",
@@ -291,7 +291,7 @@ export default function Gallery() {
     },
     {
       id: 25,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/a5ec27b78_IMG_3844.jpg",
+      src: "/images/portfolio/34-a5ec27b78_IMG_3844.jpg",
       category: "Architecture",
       title: "Skyward",
       size: "large",
@@ -300,7 +300,7 @@ export default function Gallery() {
     },
     {
       id: 26,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/106fd043a_IMG_4165.jpg",
+      src: "/images/portfolio/35-106fd043a_IMG_4165.jpg",
       category: "Nature",
       title: "Churning Wake",
       size: "medium",
@@ -309,7 +309,7 @@ export default function Gallery() {
     },
     {
       id: 23,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/4e84bc77d_NewHavenConnecticut__MG_0316.jpg",
+      src: "/images/portfolio/36-4e84bc77d_NewHavenConnecticut__MG_0316.jpg",
       category: "Nature",
       title: "Pale Cluster",
       size: "small",
@@ -318,7 +318,7 @@ export default function Gallery() {
     },
     {
       id: 27,
-      src: "https://media.base44.com/images/public/6a398250071013524ae383a2/73240599b_IMG_4032.jpg",
+      src: "/images/portfolio/37-73240599b_IMG_4032.jpg",
       category: "Architecture",
       title: "Cliffside Sentinel",
       size: "large",

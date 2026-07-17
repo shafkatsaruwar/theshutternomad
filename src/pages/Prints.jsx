@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { Check, ShoppingBag, Loader2, Frame, Truck, ShieldCheck } from "lucide-react";
+import React from "react";
+import { Check, Mail, Frame, Truck, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { base44 } from "@/api/base44Client";
 import FadeIn from "@/components/ui/FadeIn";
 
 const prints = [
@@ -31,62 +29,6 @@ const prints = [
 ];
 
 export default function Prints() {
-  const [loadingId, setLoadingId] = useState(null);
-  const [status, setStatus] = useState(null);
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("status")) setStatus(params.get("status"));
-  }, []);
-
-  const handleOrder = async (priceId) => {
-    if (window.self !== window.top) {
-      alert("Checkout works only from a published app. Please open the app in a new tab to complete your purchase.");
-      return;
-    }
-
-    setLoadingId(priceId);
-    try {
-      const response = await base44.functions.invoke("create-print-checkout", {
-        price_id: priceId,
-        quantity: 1,
-      });
-      if (response.data?.url) {
-        window.location.href = response.data.url;
-      }
-    } catch (error) {
-      alert("Something went wrong starting checkout. Please try again.");
-    } finally {
-      setLoadingId(null);
-    }
-  };
-
-  if (status === "success") {
-    return (
-      <div className="min-h-screen pt-32 pb-24 flex items-center justify-center">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="text-center px-6"
-        >
-          <div className="w-20 h-20 mx-auto mb-8 flex items-center justify-center bg-[#B08D57]/10 rounded-full">
-            <Check className="w-10 h-10 text-[#B08D57]" />
-          </div>
-          <h1 className="font-serif text-4xl md:text-5xl text-[#1a1a1a] mb-4">
-            Order Confirmed
-          </h1>
-          <p className="text-[#3D2B1F]/70 max-w-md mx-auto mb-8">
-            Thank you for your order. A confirmation has been sent to your email,
-            and your print will be crafted and shipped with care.
-          </p>
-          <p className="text-[#B08D57] text-sm tracking-widest uppercase">
-            Made with light &amp; wanderlust
-          </p>
-        </motion.div>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen pt-32 pb-24">
       {/* Header */}
@@ -140,21 +82,15 @@ export default function Prints() {
                     {print.price}
                   </p>
                   <Button
-                    onClick={() => handleOrder(print.priceId)}
-                    disabled={loadingId === print.priceId}
+                    asChild
                     className="w-full py-5 bg-[#1a1a1a] text-white text-sm tracking-widest uppercase hover:bg-[#3D2B1F] transition-colors rounded-none"
                   >
-                    {loadingId === print.priceId ? (
-                      <>
-                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                        Preparing...
-                      </>
-                    ) : (
-                      <>
-                        <ShoppingBag className="w-4 h-4 mr-2" />
-                        Order Print
-                      </>
-                    )}
+                    <a
+                      href={`mailto:theshutternomad@outlook.com?subject=Print%20Inquiry%20-%20${encodeURIComponent(print.name)}&body=Hi%20Mohammed,%0A%0AI%27m%20interested%20in%20the%20${encodeURIComponent(print.name)}%20${encodeURIComponent(print.size)}%20print.%20Can%20you%20send%20me%20the%20available%20photo%20options%20and%20next%20steps%3F`}
+                    >
+                      <Mail className="w-4 h-4 mr-2" />
+                      Inquire About Print
+                    </a>
                   </Button>
                 </div>
               </div>
