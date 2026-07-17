@@ -332,33 +332,30 @@ export default function Gallery() {
     : galleryImages.filter(img => img.category === activeFilter);
 
   return (
-    <div className="min-h-screen pt-32 pb-24">
+    <div className="min-h-screen pt-32 pb-24 bg-white">
       {/* Header */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
         <FadeIn>
-          <p className="text-[#B08D57] text-sm tracking-[0.3em] uppercase mb-4">
-            The Collection
-          </p>
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-[#1a1a1a] mb-8">
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-black mb-6">
             Gallery
           </h1>
-          <p className="text-[#3D2B1F]/70 max-w-xl leading-relaxed">
-            A curated selection of photographs from journeys near and far. 
-            Each frame is a moment frozen — a story waiting to be felt.
+          <p className="text-gray-600 max-w-2xl leading-relaxed text-lg mb-12">
+            A curated collection of portraits, weddings, and moments from celebrations.
+            Each image represents authentic storytelling and professional artistry.
           </p>
         </FadeIn>
 
         {/* Filters */}
         <FadeIn delay={0.2}>
-          <div className="flex flex-wrap gap-4 mt-12">
+          <div className="flex flex-wrap gap-3">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveFilter(category)}
-                className={`px-5 py-2 text-xs tracking-widest uppercase border transition-all duration-300 ${
+                className={`px-6 py-2 text-sm tracking-wider uppercase transition-all duration-300 ${
                   activeFilter === category
-                    ? "bg-[#1a1a1a] text-white border-[#1a1a1a]"
-                    : "bg-transparent text-[#1a1a1a] border-[#1a1a1a]/20 hover:border-[#1a1a1a]"
+                    ? "bg-black text-white"
+                    : "bg-gray-100 text-black hover:bg-gray-200"
                 }`}
               >
                 {category}
@@ -368,8 +365,8 @@ export default function Gallery() {
         </FadeIn>
       </div>
 
-      {/* Cinematic Full-Bleed Gallery */}
-      <div className="w-full">
+      {/* Grid Gallery */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeFilter}
@@ -377,59 +374,39 @@ export default function Gallery() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {filteredImages.map((image, index) => {
-              const isWide = index % 3 === 0;
-              return (
-                <motion.div
-                  key={image.id}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-80px" }}
-                  transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-                  className={`group cursor-pointer relative overflow-hidden bg-[#1a1a1a] ${
-                    isWide
-                      ? "w-full aspect-[16/10] md:aspect-[21/9]"
-                      : "w-full aspect-[4/3] md:aspect-[16/9]"
-                  }`}
-                  onClick={() => setSelectedImage(image)}
-                >
-                  <img
-                    src={image.src}
-                    alt={image.title}
-                    className="w-full h-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-[1.04]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/70 via-transparent to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-500" />
-                  <div className="absolute bottom-0 left-0 right-0 p-8 md:p-14 lg:p-20 flex items-end justify-between">
-                    <div>
-                      <p className="text-white/60 text-xs tracking-[0.3em] uppercase mb-2">
-                        {image.category}
-                      </p>
-                      <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white mb-3">
-                        {image.title}
-                      </h3>
-                      <div className="flex flex-wrap gap-x-5 gap-y-1 text-white/70 text-xs tracking-wider">
-                        {image.location && (
-                          <span className="inline-flex items-center gap-1.5">
-                            <MapPin className="w-3.5 h-3.5 text-[#B08D57]" />
-                            {image.location}
-                          </span>
-                        )}
-                        {image.date && (
-                          <span className="inline-flex items-center gap-1.5">
-                            <Calendar className="w-3.5 h-3.5 text-[#B08D57]" />
-                            {image.date}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                    <span className="hidden md:block text-white/40 text-sm tracking-widest">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                  </div>
-                </motion.div>
-              );
-            })}
+            {filteredImages.map((image, index) => (
+              <motion.div
+                key={image.id}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.6, delay: index * 0.05 }}
+                className="group cursor-pointer relative overflow-hidden aspect-square bg-gray-200"
+                onClick={() => setSelectedImage(image)}
+              >
+                <img
+                  src={image.src}
+                  alt={image.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-white/80 text-xs tracking-widest uppercase mb-1">
+                    {image.category}
+                  </p>
+                  <h3 className="font-serif text-xl text-white">
+                    {image.title}
+                  </h3>
+                  {image.date && (
+                    <p className="text-white/60 text-xs mt-2">
+                      {image.date}
+                    </p>
+                  )}
+                </div>
+              </motion.div>
+            ))}
           </motion.div>
         </AnimatePresence>
       </div>
